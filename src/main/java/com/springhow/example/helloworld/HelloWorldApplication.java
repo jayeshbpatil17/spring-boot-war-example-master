@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+
 @SpringBootApplication
 public class HelloWorldApplication extends SpringBootServletInitializer {
  @Override
@@ -20,10 +20,7 @@ public class HelloWorldApplication extends SpringBootServletInitializer {
        SpringApplication.run(HelloWorldApplication.class);
 
     
-    @RequestMapping("/")
-    String helloWorld() {
-        return "Hello World!";
-    }
+ 
 
     }
 
