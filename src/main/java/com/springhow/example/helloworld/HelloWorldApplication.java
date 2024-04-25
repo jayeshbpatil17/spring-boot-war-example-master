@@ -10,15 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 public class HelloWorldApplication extends SpringBootServletInitializer {
-
- 
-
-    public static void main(String[] args) {
-       // SpringApplication.run(HelloWorldApplication.class);
-           @Override
+ @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(HelloWorldApplication.class);
     }
+ 
+
+    public static void main(String[] args) {
+       SpringApplication.run(HelloWorldApplication.class);
 
     
     @RequestMapping("/")
